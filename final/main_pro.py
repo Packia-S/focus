@@ -17,7 +17,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-icon = Image.open("logo.png")
+
+from pathlib import Path
+
+
+icon_path = Path(__file__).parent / "logo.png"
+icon = Image.open(icon_path)
+
+# icon = Image.open("logo.png")
 
 st.set_page_config(
     page_title = "VRNeXGen",
