@@ -93,7 +93,7 @@ tab1, tab2 = st.tabs(
     ]
 )
 
-csv_file = "resume_output.csv"
+csv_file = "final/resume_output.csv"
 
 with tab1:
     st.header("Upload Resume")
