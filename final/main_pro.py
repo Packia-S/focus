@@ -1,5 +1,3 @@
-import bootstrap
-
 import streamlit as st
 import docling
 import pandas as pd
