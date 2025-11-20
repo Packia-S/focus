@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-icon = Image.open("D:/VRNeXGen/resume/final/logo.png")
+icon = Image.open("logo.png")
 
 st.set_page_config(
     page_title = "VRNeXGen",
