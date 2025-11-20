@@ -6,15 +6,14 @@ os.environ["DOCLING_CPU_ONLY"] = "1"
 os.environ["CUDA_VISIBLE_DEVICES"] = ""
 
 import streamlit as st
+import docling
+import pandas as pd
 from PIL import Image
-from langchain_docling import DoclingLoader
-from langchain_docling.loader import ExportType
 from schema import Profile
 from config import settings
 from langchain_google_genai import ChatGoogleGenerativeAI
-import os 
-import docling
-import pandas as pd
+from langchain_docling import DoclingLoader
+from langchain_docling.loader import ExportType
 from dotenv import load_dotenv
 
 load_dotenv()
