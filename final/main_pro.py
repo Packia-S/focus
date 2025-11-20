@@ -1,9 +1,16 @@
 import os
 
 # os.environ["HF_HUB_DISABLE_SYMLINKS"] = "1"
+# MUST be the first lines in the file
 os.environ["DOCLING_DISABLE_TABLE_MODEL"] = "1"
+os.environ["DOCLING_DISABLE_LAYOUT_MODEL"] = "1"
+os.environ["DOCLING_DISABLE_OCR"] = "1"        # Very important
 os.environ["DOCLING_CPU_ONLY"] = "1"
 os.environ["CUDA_VISIBLE_DEVICES"] = ""
+
+# Patch to completely block cv2 import
+import sys
+sys.modules["cv2"] = None
 
 import streamlit as st
 import docling
