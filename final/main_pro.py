@@ -2,6 +2,10 @@ import os
 
 # # FIX: Prevent HuggingFace from creating symlinks on Windows
 # os.environ["HF_HUB_DISABLE_SYMLINKS"] = "1"
+os.environ["DOCLING_DISABLE_TABLE_MODEL"] = "1"
+os.environ["DOCLING_CPU_ONLY"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = ""
+
 
 import streamlit as st
 from PIL import Image
